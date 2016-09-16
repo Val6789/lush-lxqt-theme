@@ -67,3 +67,31 @@ QToolButton:hover {
     margin: 2px;
     padding: 2px;
 }
+/*
+ * Menus
+ */
+QMenu {
+    background-color: #bfbfbf;
+}
+
+QMenu::icon {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-left: 5px;
+}
+
+QMenu::item {
+    color: #DEDEDE;
+    background: #2D2D2D;
+    border: 1px solid transparent;
+    padding: 5px 30px 5px 30px; border: 1px solid transparent;
+    padding: 5px 30px 5px 30px;
+}
+
+QMenu::item:selected {
+    background: #49CC91;
+}
+
+QMenu::item:selected:disabled {
+    background-color: #2D2D2D;
+}
