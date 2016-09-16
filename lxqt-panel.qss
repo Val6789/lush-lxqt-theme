@@ -63,7 +63,7 @@ LXQtPanelPlugin > QToolButton:pressed {
  */
 
 QMenu {
-    background-color: #2D2D2D;
+    background-color: #bfbfbf;
 }
 
 QMenu::icon {
@@ -74,6 +74,10 @@ QMenu::icon {
 
 QMenu::item {
     color: #DEDEDE;
+    background: #2D2D2D;
+    border: 1px solid transparent;
+    padding: 5px 30px 5px 30px; border: 1px solid transparent;
+    padding: 5px 30px 5px 30px;
 }
 
 QMenu::item:selected {
@@ -92,6 +96,12 @@ QMenu::right-arrow {
     image: url(arrow-right.svg);
 }
 
+QMenu::separator {
+    background: #747474;
+    margin:0px;
+    height:1px;
+
+}
 /*
  * Calendar Widget
 */
@@ -110,7 +120,7 @@ QCalendarWidget QWidget {
     alternate-background-color: #DEDEDE;
 }
 QCalendarWidget #qt_calendar_navigationbar {
-    background-color:#2D2D2D;
+    background-color:#8d8d8d;
     color: #DEDEDE;
     padding: 2px;
 }
@@ -164,7 +174,9 @@ QCalendarWidget QSpinBox {
 #MainMenuPlugin {
     padding: 0px;
 }
-
+#MainMenu QMenu {
+    background-color: #1a1a1a;
+}
 #MainMenu {
     background: #49CC91;
     qproperty-icon: url(mainmenu.svg);
@@ -553,4 +565,27 @@ border-radius: 3px;
     background-repeat: repeat-x;
     margin-right: 2px;
     margin-left: 2px;
+}
+
+/*
+ * Color Picker
+ */
+#ColorPickerPlugin QToolButton{
+    qproperty-icon: url(color-picker.svg);
+    margin: 0px;
+    padding: 2px;
+}
+
+#ColorPickerPlugin QToolButton:hover {
+    padding:4px;
+}
+
+
+#ColorPickerPlugin QLineEdit {
+    border: 1px solid black;
+    border-radius:2px;
+    margin: 4px;
+    padding: 1px;
+    background: #bdc3c3;
+    color: #363737;
 }
